@@ -1,0 +1,39 @@
+<%- include('partials/header'); %>
+
+<div class="s-content">
+
+    <div class="row">
+
+        <div id="main" class="s-content__main large-8 column">
+
+            <article class="entry">
+
+                <header class="entry__header">
+
+                    <h2 class="entry__title h1">
+                        <a href="/blog/<%-post._id%>" title=""><%-post.title%></a>
+                    </h2>
+
+                    <div class="entry__meta">
+                        <ul>
+                            <li><%-post.date%></li>
+                        </ul>
+                    </div>
+
+                </header> <!-- entry__header -->
+<div class="entry__content-media">
+    <img src="images/wheel-500.jpg"
+         srcset="images/wheel-1000.jpg 1000w,
+                 images/wheel-500.jpg 500w"
+         sizes="(max-width: 1000px) 100vw, 1000px" alt="">
+</div>
+
+<div class="entry__content">
+    <p><%-post.text%></p>
+</div> <!-- entry__content -->
+
+
+</article> <!-- end entry -->
+
+<%- include('partials/sidebar'); %>
+<%- include('partials/footer'); %>

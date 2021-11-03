@@ -1,0 +1,39 @@
+<%- include('partials/header'); %>
+
+<!-- Content
+================================================== -->
+<div class="s-content">
+
+    <div class="row">
+
+        <div id="main" class="s-content__main large-8 column">
+
+            <article class="entry">
+
+                <header class="entry__header">
+
+                    <h2 class="entry__title h1">
+                        <a href="/blog/<%-postId%>" title=""><%-title%></a>
+                    </h2>
+
+                    <div class="entry__meta">
+                        <ul>
+                            <li><%-date%></li>
+                          </ul>
+                    </div>
+
+                </header>
+
+                <div class="entry__content">
+                    <p>
+                  <%-text%>
+                    </p>
+                </div>
+
+            </article> <!-- end entry -->
+
+
+       </div> <!-- end main -->
+
+<%- include('partials/sidebar'); %>
+<%- include('partials/footer'); %>
